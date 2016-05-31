@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Configuration;
 using Jal.Settings.Fluent;
+using Jal.Settings.Fluent.Interface;
 using Jal.Settings.Interface;
-using Jal.Settings.Interface.Fluent;
 
 namespace Jal.Settings.Impl
 {
@@ -11,7 +11,7 @@ namespace Jal.Settings.Impl
 
         public static ISettingsExtractor Current;
 
-        public static ISettingsExtractorFluentBuilder Builder
+        public static ISettingsExtractorStartFluentBuilder Builder
         {
             get { return new SettingsExtractorFluentBuilder(); }
         }

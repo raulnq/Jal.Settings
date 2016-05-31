@@ -1,7 +1,7 @@
 ﻿using System.Configuration;
 using Jal.Settings.Fluent;
+using Jal.Settings.Fluent.Interface;
 using Jal.Settings.Interface;
-using Jal.Settings.Interface.Fluent;
 
 namespace Jal.Settings.Impl
 {
@@ -9,7 +9,7 @@ namespace Jal.Settings.Impl
     {
         public static ISectionExtractor Current;
 
-        public static ISectionExtractorFluentBuilder Builder
+        public static ISectionExtractorStartFluentBuilder Builder
         {
             get { return new SectionExtractorFluentBuilder(); }
         }

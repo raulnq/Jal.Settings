@@ -1,4 +1,6 @@
-﻿namespace Jal.Settings.Interface.Fluent
+﻿using Jal.Settings.Interface;
+
+namespace Jal.Settings.Fluent.Interface
 {
     public interface ISectionExtractorFluentBuilder
     {

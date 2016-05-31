@@ -40,12 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fluent\Interface\ISectionExtractorStartFluentBuilder.cs" />
+    <Compile Include="Fluent\Interface\ISettingsExtractorStartFluentBuilder.cs" />
     <Compile Include="Fluent\SectionExtractorFluentBuilder.cs" />
     <Compile Include="Fluent\SettingsExtractorFluentBuilder.cs" />
     <Compile Include="Impl\SectionExtractor.cs" />
     <Compile Include="Impl\SettingsExtractor.cs" />
-    <Compile Include="Interface\Fluent\ISectionExtractorFluentBuilder.cs" />
-    <Compile Include="Interface\Fluent\ISettingsExtractorFluentBuilder.cs" />
+    <Compile Include="Fluent\Interface\ISectionExtractorFluentBuilder.cs" />
+    <Compile Include="Fluent\Interface\ISettingsExtractorFluentBuilder.cs" />
     <Compile Include="Interface\ISectionExtractor.cs" />
     <Compile Include="Interface\ISettingsExtractor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
