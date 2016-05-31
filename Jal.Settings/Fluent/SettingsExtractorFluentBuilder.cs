@@ -13,7 +13,7 @@ namespace Jal.Settings.Fluent
         {
             get
             {
-                if (_settingsExtractor == null)
+                if (_settingsExtractor != null)
                 {
                     return _settingsExtractor;
                 }
