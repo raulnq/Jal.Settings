@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Specialized;
 using System.Configuration;
 using Jal.Settings.Fluent;
 using Jal.Settings.Fluent.Interface;
@@ -31,6 +32,11 @@ namespace Jal.Settings.Impl
                     return defaultvalue;
 
             return (T)Convert.ChangeType(ConfigurationManager.AppSettings[name], typeof(T));
+        }
+
+        public NameValueCollection All()
+        {
+            return ConfigurationManager.AppSettings;
         }
     }
 }
