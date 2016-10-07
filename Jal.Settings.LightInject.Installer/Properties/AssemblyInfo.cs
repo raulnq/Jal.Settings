@@ -1,16 +1,15 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Jal.Settings")]
-[assembly: AssemblyDescription("Just another library to get the settings of your application")]
+[assembly: AssemblyTitle("Jal.Settings.LightInject.Installer")]
+[assembly: AssemblyDescription("LightInject installer for the Jal.Settings library")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Raul Naupari")]
-[assembly: AssemblyProduct("Jal.Settings")]
-[assembly: AssemblyCopyright("Copyright © 2015")]
+[assembly: AssemblyProduct("Jal.Settings.LightInject.Installer")]
+[assembly: AssemblyCopyright("Copyright © 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c7adf516-a3af-446d-a3a1-4c862c86f696")]
+[assembly: Guid("96139302-6c97-4432-801d-7d7504493b82")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.5.0")]
-[assembly: AssemblyFileVersion("1.0.5.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]

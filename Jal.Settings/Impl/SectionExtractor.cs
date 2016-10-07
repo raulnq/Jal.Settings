@@ -9,10 +9,7 @@ namespace Jal.Settings.Impl
     {
         public static ISectionExtractor Current;
 
-        public static ISectionExtractorStartFluentBuilder Builder
-        {
-            get { return new SectionExtractorFluentBuilder(); }
-        }
+        public static ISectionExtractorFluentBuilder Builder => new SectionExtractorFluentBuilder();
 
         public T GetSection<T>(string name) where T:class
         {
@@ -23,7 +20,7 @@ namespace Jal.Settings.Impl
             catch (ConfigurationErrorsException ce)
             {
                 throw new ConfigurationErrorsException(
-                    string.Format("Section \"{0}\" is missing from app configuration file", name), ce);
+                    $"Section \"{name}\" is missing from app configuration file", ce);
             }
             
         }

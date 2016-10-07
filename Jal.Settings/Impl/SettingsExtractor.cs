@@ -12,10 +12,7 @@ namespace Jal.Settings.Impl
 
         public static ISettingsExtractor Current;
 
-        public static ISettingsExtractorStartFluentBuilder Builder
-        {
-            get { return new SettingsExtractorFluentBuilder(); }
-        }
+        public static ISettingsExtractorFluentBuilder Builder => new SettingsExtractorFluentBuilder();
 
         public T Get<T>(string name, bool required = true, T defaultvalue=default(T))
         {
@@ -27,7 +24,7 @@ namespace Jal.Settings.Impl
 
             if (string.IsNullOrEmpty(setting))
                 if (required)
-                    throw new ConfigurationErrorsException(string.Format("{0} - is missing from app configuration file", name));
+                    throw new ConfigurationErrorsException($"{name} - is missing from app configuration file");
                 else
                     return defaultvalue;
 

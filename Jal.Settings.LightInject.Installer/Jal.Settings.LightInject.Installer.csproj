@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{56393C50-9E04-47E5-A9D7-C9489BF57AAD}</ProjectGuid>
+    <ProjectGuid>{96139302-6C97-4432-801D-7D7504493B82}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jal.Settings</RootNamespace>
-    <AssemblyName>Jal.Settings</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>Jal.Settings.LightInject.Installer</RootNamespace>
+    <AssemblyName>Jal.Settings.LightInject.Installer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -30,28 +30,32 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LightInject, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LightInject.4.1.0\lib\net45\LightInject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fluent\SectionExtractorFluentBuilder.cs" />
-    <Compile Include="Fluent\SettingsExtractorFluentBuilder.cs" />
-    <Compile Include="Impl\SectionExtractor.cs" />
-    <Compile Include="Impl\SettingsExtractor.cs" />
-    <Compile Include="Fluent\Interface\ISectionExtractorFluentBuilder.cs" />
-    <Compile Include="Fluent\Interface\ISettingsExtractorFluentBuilder.cs" />
-    <Compile Include="Interface\ISectionExtractor.cs" />
-    <Compile Include="Interface\ISettingsExtractor.cs" />
+    <Compile Include="SettingsCompositionRoot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Jal.Settings.nuspec" />
+    <None Include="Jal.Settings.LightInject.Installer.nuspec" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Jal.Settings\Jal.Settings.csproj">
+      <Project>{56393C50-9E04-47E5-A9D7-C9489BF57AAD}</Project>
+      <Name>Jal.Settings</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
