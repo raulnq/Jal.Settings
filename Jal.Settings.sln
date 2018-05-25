@@ -1,23 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jal.Settings", "Jal.Settings\Jal.Settings.csproj", "{56393C50-9E04-47E5-A9D7-C9489BF57AAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jal.Settings", "Jal.Settings\Jal.Settings.csproj", "{56393C50-9E04-47E5-A9D7-C9489BF57AAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jal.Settings.Installer", "Jal.Settings.Installer\Jal.Settings.Installer.csproj", "{BC4B935B-200A-4CF9-9C70-FA0307B9ACB8}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3EAA8F0D-B774-468C-AF77-D93CDAAD9343}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jal.Settings.Installer", "Jal.Settings.Installer\Jal.Settings.Installer.csproj", "{BC4B935B-200A-4CF9-9C70-FA0307B9ACB8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{77A63F02-DCFC-43D5-8314-F5E3CF8D3895}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jal.Settings.LightInject.Installer", "Jal.Settings.LightInject.Installer\Jal.Settings.LightInject.Installer.csproj", "{96139302-6C97-4432-801D-7D7504493B82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jal.Settings.LightInject.Installer", "Jal.Settings.LightInject.Installer\Jal.Settings.LightInject.Installer.csproj", "{96139302-6C97-4432-801D-7D7504493B82}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jal.Settings.Tests", "Jal.Settings.Tests\Jal.Settings.Tests.csproj", "{EB53BDC1-5B53-445A-A863-D3F4A569C421}"
 EndProject
@@ -46,5 +41,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D32BFD56-3CDB-48EA-B92D-672F64E0AF87}
 	EndGlobalSection
 EndGlobal
