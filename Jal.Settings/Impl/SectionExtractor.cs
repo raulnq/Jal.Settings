@@ -1,6 +1,4 @@
 ﻿using System.Configuration;
-using Jal.Settings.Fluent;
-using Jal.Settings.Fluent.Interface;
 using Jal.Settings.Interface;
 
 namespace Jal.Settings.Impl
@@ -9,7 +7,10 @@ namespace Jal.Settings.Impl
     {
         public static ISectionExtractor Current;
 
-        public static ISectionExtractorFluentBuilder Builder => new SectionExtractorFluentBuilder();
+        public static ISectionExtractor Create()
+        {
+            return new SectionExtractor();
+        }
 
         public T GetSection<T>(string name) where T:class
         {

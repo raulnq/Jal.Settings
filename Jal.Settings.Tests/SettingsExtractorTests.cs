@@ -11,7 +11,7 @@ namespace Jal.Settings.Tests
         [Test]
         public void Get_With_ShouldNotBeNull()
         {
-            var sut = new SettingsExtractor();
+            var sut = SettingsExtractor.Create();
 
             var setting = sut.Get<string>("setting1");
 
@@ -70,14 +70,6 @@ namespace Jal.Settings.Tests
             var settings = sut.All();
 
             settings.ShouldNotBeNull();
-        }
-
-        [Test]
-        public void Builder_With_ShouldNotBeNull()
-        {
-            var builder = SettingsExtractor.Builder;
-
-            builder.ShouldNotBeNull();
         }
     }
 }
