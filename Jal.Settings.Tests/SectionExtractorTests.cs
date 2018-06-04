@@ -10,7 +10,7 @@ namespace Jal.Settings.Tests
         [Test]
         public void GetSection_With_ShouldNotBeNull()
         {
-            var sut = SectionExtractor.Create();
+            var sut = AppSectionExtractor.Create();
 
             var section = sut.GetSection<ConnectionStringsSection>("connectionStrings");
 
@@ -20,7 +20,7 @@ namespace Jal.Settings.Tests
         [Test]
         public void GetSection_WithNonExistingSection_ShouldNotBeNull()
         {
-            var sut = new SectionExtractor();
+            var sut = new AppSectionExtractor();
 
             var section = sut.GetSection<ConnectionStringsSection>("connectionStrings2");
 
@@ -30,7 +30,7 @@ namespace Jal.Settings.Tests
         [Test]
         public void GetSection_WithNoValidSection_ShouldNotBeNull()
         {
-            var sut = new SectionExtractor();
+            var sut = new AppSectionExtractor();
 
             var section = sut.GetSection<string>("connectionStrings");
 

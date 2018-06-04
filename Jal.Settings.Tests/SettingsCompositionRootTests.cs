@@ -13,7 +13,7 @@ namespace Jal.Settings.Tests
         {
             var container = new ServiceContainer();
 
-            container.RegisterFrom<SettingsCompositionRoot>();
+            container.RegisterFrom<AppSettingsCompositionRoot>();
 
             var setting = container.GetInstance<ISettingsExtractor>();
 

@@ -3,13 +3,13 @@ using Jal.Settings.Interface;
 
 namespace Jal.Settings.Impl
 {
-    public class SectionExtractor : ISectionExtractor
+    public class AppSectionExtractor : ISectionExtractor
     {
         public static ISectionExtractor Current;
 
         public static ISectionExtractor Create()
         {
-            return new SectionExtractor();
+            return new AppSectionExtractor();
         }
 
         public T GetSection<T>(string name) where T:class

@@ -13,7 +13,7 @@ namespace Jal.Settings.Tests
         {
             var container = new WindsorContainer();
 
-            container.Install(new SettingsInstaller());
+            container.Install(new AppSettingsInstaller());
 
             var setting = container.Resolve<ISettingsExtractor>();
 

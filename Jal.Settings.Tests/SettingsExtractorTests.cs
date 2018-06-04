@@ -11,7 +11,7 @@ namespace Jal.Settings.Tests
         [Test]
         public void Get_With_ShouldNotBeNull()
         {
-            var sut = SettingsExtractor.Create();
+            var sut = AppSettingsExtractor.Create();
 
             var setting = sut.Get<string>("setting1");
 
@@ -23,7 +23,7 @@ namespace Jal.Settings.Tests
         [Test]
         public void Get_WithNonExistingSetting_ShouldThrowException()
         {
-            var sut = new SettingsExtractor();
+            var sut = new AppSettingsExtractor();
 
             Should.Throw<ConfigurationErrorsException>(() => { var setting = sut.Get<string>("setting2"); });
         }
@@ -31,7 +31,7 @@ namespace Jal.Settings.Tests
         [Test]
         public void Get_WithNonExistingSetting_ShouldNotBeNull()
         {
-            var sut = new SettingsExtractor();
+            var sut = new AppSettingsExtractor();
 
             var setting = sut.Get<string>("setting2", false);
 
@@ -41,7 +41,7 @@ namespace Jal.Settings.Tests
         [Test]
         public void Get_WithNonExistingSettingAndDefault_ShouldNotBeNull()
         {
-            var sut = new SettingsExtractor();
+            var sut = new AppSettingsExtractor();
 
             var setting = sut.Get<string>("setting2", false, "2");
 
@@ -53,7 +53,7 @@ namespace Jal.Settings.Tests
         [Test]
         public void Get_WithEmptyKey_ShouldNotBeNull()
         {
-            var sut = new SettingsExtractor();
+            var sut = new AppSettingsExtractor();
 
             var setting = sut.Get<string>("", false, "2");
 
@@ -65,7 +65,7 @@ namespace Jal.Settings.Tests
         [Test]
         public void ALl_With_ShouldNotBeNull()
         {
-            var sut = new SettingsExtractor();
+            var sut = new AppSettingsExtractor();
 
             var settings = sut.All();
 

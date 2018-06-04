@@ -5,14 +5,14 @@ using Jal.Settings.Interface;
 
 namespace Jal.Settings.Impl
 {
-    public class SettingsExtractor : ISettingsExtractor
+    public class AppSettingsExtractor : ISettingsExtractor
     {
 
         public static ISettingsExtractor Current;
 
         public static ISettingsExtractor Create()
         {
-            return new SettingsExtractor();
+            return new AppSettingsExtractor();
         }
 
         public T Get<T>(string name, bool required = true, T defaultvalue=default(T))
