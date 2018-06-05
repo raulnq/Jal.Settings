@@ -4,21 +4,21 @@ using System.Collections.Specialized;
 using Jal.Settings.Interface;
 using Microsoft.Extensions.Configuration;
 
-namespace Jal.Settings.Impl
+namespace Jal.Settings.Configuration.Impl
 {
-    public class ConfigurationSettingsExtractor : ISettingsExtractor
+    public class SettingsExtractor : ISettingsExtractor
     {
 
         public static ISettingsExtractor Current;
 
         public static ISettingsExtractor Create(IConfiguration configuration)
         {
-            return new ConfigurationSettingsExtractor(configuration);
+            return new SettingsExtractor(configuration);
         }
 
         private readonly IConfiguration _configuration;
 
-        public ConfigurationSettingsExtractor(IConfiguration configuration)
+        public SettingsExtractor(IConfiguration configuration)
         {
             _configuration = configuration;
         }

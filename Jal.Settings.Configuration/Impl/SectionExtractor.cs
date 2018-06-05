@@ -1,15 +1,14 @@
-﻿#if NETSTANDARD2_0
-using System;
+﻿using System;
 using Jal.Settings.Interface;
 using Microsoft.Extensions.Configuration;
 
-namespace Jal.Settings.Impl
+namespace Jal.Settings.Configuration.Impl
 {
-    public class ConfigurationSectionExtractor : ISectionExtractor
+    public class SectionExtractor : ISectionExtractor
     {
         private readonly IConfiguration _configuration;
 
-        public ConfigurationSectionExtractor(IConfiguration configuration)
+        public SectionExtractor(IConfiguration configuration)
         {
             _configuration = configuration;
         }
@@ -18,7 +17,7 @@ namespace Jal.Settings.Impl
 
         public static ISectionExtractor Create(IConfiguration configuration)
         {
-            return new ConfigurationSectionExtractor(configuration);
+            return new SectionExtractor(configuration);
         }
 
         public T GetSection<T>(string name) where T : class
@@ -36,4 +35,3 @@ namespace Jal.Settings.Impl
         }
     }
 }
-#endif

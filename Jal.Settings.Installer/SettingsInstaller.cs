@@ -6,13 +6,13 @@ using Jal.Settings.Interface;
 
 namespace Jal.Settings.Installer
 {
-    public class AppSettingsInstaller : IWindsorInstaller
+    public class SettingsInstaller : IWindsorInstaller
     {
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
             container.Register(
-                Component.For<ISectionExtractor>().ImplementedBy<AppSectionExtractor>(),
-                Component.For<ISettingsExtractor>().ImplementedBy<AppSettingsExtractor>());
+                Component.For<ISectionExtractor>().ImplementedBy<SectionExtractor>(),
+                Component.For<ISettingsExtractor>().ImplementedBy<SettingsExtractor>());
         }
     }
 }

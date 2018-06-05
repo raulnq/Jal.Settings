@@ -1,18 +1,17 @@
-﻿#if NETSTANDARD2_0
-using Castle.MicroKernel.Registration;
+﻿using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
-using Jal.Settings.Impl;
+using Jal.Settings.Configuration.Impl;
 using Jal.Settings.Interface;
 using Microsoft.Extensions.Configuration;
 
-namespace Jal.Settings.Installer
+namespace Jal.Settings.Configuration.Installer
 {
-    public class ConfigurationSettingsInstaller : IWindsorInstaller
+    public class SettingsInstaller : IWindsorInstaller
     {
         private readonly IConfiguration _configuration;
 
-        public ConfigurationSettingsInstaller(IConfiguration configuration)
+        public SettingsInstaller(IConfiguration configuration)
         {
             _configuration = configuration;
         } 
@@ -22,9 +21,8 @@ namespace Jal.Settings.Installer
 
             container.Register(
                 Component.For<IConfiguration>().Instance(_configuration),
-                Component.For<ISectionExtractor>().ImplementedBy<ConfigurationSectionExtractor>(),
-                Component.For<ISettingsExtractor>().ImplementedBy<ConfigurationSettingsExtractor>());
+                Component.For<ISectionExtractor>().ImplementedBy<SectionExtractor>(),
+                Component.For<ISettingsExtractor>().ImplementedBy<SettingsExtractor>());
         }
     }
 }
-#endif
