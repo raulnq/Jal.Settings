@@ -5,22 +5,20 @@ VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jal.Settings", "Jal.Settings\Jal.Settings.csproj", "{56393C50-9E04-47E5-A9D7-C9489BF57AAD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jal.Settings.Installer", "Jal.Settings.Installer\Jal.Settings.Installer.csproj", "{BC4B935B-200A-4CF9-9C70-FA0307B9ACB8}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{77A63F02-DCFC-43D5-8314-F5E3CF8D3895}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jal.Settings.LightInject.Installer", "Jal.Settings.LightInject.Installer\Jal.Settings.LightInject.Installer.csproj", "{96139302-6C97-4432-801D-7D7504493B82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jal.Settings.Configuration", "Jal.Settings.Configuration\Jal.Settings.Configuration.csproj", "{2D9B21E6-DC22-4F86-8C10-E9ABB630A8C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jal.Settings.Tests", "Jal.Settings.Tests\Jal.Settings.Tests.csproj", "{EB53BDC1-5B53-445A-A863-D3F4A569C421}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jal.Settings.Configuration.Installer", "Jal.Settings.Configuration.Installer\Jal.Settings.Configuration.Installer.csproj", "{00B18F8C-0B05-457F-9BA7-8D0C323BCD78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jal.Settings.Configuration", "Jal.Settings.Configuration\Jal.Settings.Configuration.csproj", "{2D9B21E6-DC22-4F86-8C10-E9ABB630A8C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jal.Settings.Configuration.LightInject.Installer", "Jal.Settings.Configuration.LightInject.Installer\Jal.Settings.Configuration.LightInject.Installer.csproj", "{990C3328-C04F-4A25-8721-8116B8B34D09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jal.Settings.Configuration.Installer", "Jal.Settings.Configuration.Installer\Jal.Settings.Configuration.Installer.csproj", "{00B18F8C-0B05-457F-9BA7-8D0C323BCD78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jal.Settings.Tests", "Jal.Settings.Tests\Jal.Settings.Tests.csproj", "{8EC039AB-744F-4B72-8245-4A5988EE9565}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jal.Settings.Configuration.LightInject.Installer", "Jal.Settings.Configuration.LightInject.Installer\Jal.Settings.Configuration.LightInject.Installer.csproj", "{990C3328-C04F-4A25-8721-8116B8B34D09}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jal.Settings.Configuration.Microsoft.Extensions.DependencyInjection.Installer", "Jal.Settings.Configuration.Microsoft.Extensions.DependencyInjection.Installer\Jal.Settings.Configuration.Microsoft.Extensions.DependencyInjection.Installer.csproj", "{17FFC113-03CA-47FC-A957-C78A3A6F01C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,18 +30,6 @@ Global
 		{56393C50-9E04-47E5-A9D7-C9489BF57AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56393C50-9E04-47E5-A9D7-C9489BF57AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56393C50-9E04-47E5-A9D7-C9489BF57AAD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BC4B935B-200A-4CF9-9C70-FA0307B9ACB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BC4B935B-200A-4CF9-9C70-FA0307B9ACB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BC4B935B-200A-4CF9-9C70-FA0307B9ACB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BC4B935B-200A-4CF9-9C70-FA0307B9ACB8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{96139302-6C97-4432-801D-7D7504493B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96139302-6C97-4432-801D-7D7504493B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96139302-6C97-4432-801D-7D7504493B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96139302-6C97-4432-801D-7D7504493B82}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EB53BDC1-5B53-445A-A863-D3F4A569C421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EB53BDC1-5B53-445A-A863-D3F4A569C421}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EB53BDC1-5B53-445A-A863-D3F4A569C421}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EB53BDC1-5B53-445A-A863-D3F4A569C421}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2D9B21E6-DC22-4F86-8C10-E9ABB630A8C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2D9B21E6-DC22-4F86-8C10-E9ABB630A8C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D9B21E6-DC22-4F86-8C10-E9ABB630A8C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -56,6 +42,14 @@ Global
 		{990C3328-C04F-4A25-8721-8116B8B34D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{990C3328-C04F-4A25-8721-8116B8B34D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{990C3328-C04F-4A25-8721-8116B8B34D09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EC039AB-744F-4B72-8245-4A5988EE9565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC039AB-744F-4B72-8245-4A5988EE9565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC039AB-744F-4B72-8245-4A5988EE9565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC039AB-744F-4B72-8245-4A5988EE9565}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17FFC113-03CA-47FC-A957-C78A3A6F01C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17FFC113-03CA-47FC-A957-C78A3A6F01C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17FFC113-03CA-47FC-A957-C78A3A6F01C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17FFC113-03CA-47FC-A957-C78A3A6F01C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
