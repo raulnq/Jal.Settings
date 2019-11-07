@@ -7,7 +7,7 @@ namespace Jal.Settings.Configuration.Microsoft.Extensions.DependencyInjection.In
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddFactory(this IServiceCollection servicecollection, IConfiguration configuration)
+        public static IServiceCollection AddSettings(this IServiceCollection servicecollection, IConfiguration configuration)
         {
             servicecollection.AddSingleton<ISectionExtractor, SectionExtractor>();
 
