@@ -1,8 +1,6 @@
 ﻿using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
-using Jal.Settings.Configuration.Impl;
-using Jal.Settings.Interface;
 using Microsoft.Extensions.Configuration;
 
 namespace Jal.Settings.Configuration.Installer

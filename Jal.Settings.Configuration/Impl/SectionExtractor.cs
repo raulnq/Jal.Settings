@@ -1,8 +1,7 @@
 ﻿using System;
-using Jal.Settings.Interface;
 using Microsoft.Extensions.Configuration;
 
-namespace Jal.Settings.Configuration.Impl
+namespace Jal.Settings.Configuration
 {
     public class SectionExtractor : ISectionExtractor
     {

@@ -1,4 +1,4 @@
-﻿namespace Jal.Settings.Interface
+﻿namespace Jal.Settings
 {
     public interface ISectionExtractor
     {

@@ -1,10 +1,8 @@
-﻿#if NETSTANDARD2_0
-using System;
+﻿using System;
 using System.Collections.Specialized;
-using Jal.Settings.Interface;
 using Microsoft.Extensions.Configuration;
 
-namespace Jal.Settings.Configuration.Impl
+namespace Jal.Settings.Configuration
 {
     public class SettingsExtractor : ISettingsExtractor
     {
@@ -46,4 +44,3 @@ namespace Jal.Settings.Configuration.Impl
         }
     }
 }
-#endif
