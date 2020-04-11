@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Jal.Settings.Configuration\Jal.Settings.Configuration.csproj" />
-    <ProjectReference Include="..\Jal.Settings\Jal.Settings.csproj" />
   </ItemGroup>
 
 </Project>
